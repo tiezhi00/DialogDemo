@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DialogDemo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.DialogDemo" parent="Base.Theme.DialogDemo" />
+    <!--    自定义AlertDialog-->
+    <style name="Theme.AlertDialog.Custom" parent="Theme.Material3.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/bg_custom_dialog</item>
+    </style>
+    <!--    dialog的动画-->
+    <style name="Theme.AlertDialog.Custom.Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+    <!--    自定义PhotoDialog-->
+    <style name="Theme.PhotoDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@drawable/bg_custom_dialog</item>
+    </style>
+    <!--    dialog的动画-->
+    <style name="Theme.PhotoDialog.Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out_anim</item>
+    </style>
+</resources>
