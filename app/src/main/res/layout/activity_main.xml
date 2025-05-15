@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:paddingHorizontal="10dp"
     tools:context=".MainActivity">
 
@@ -23,6 +23,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="打开PhotoDialog"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <Button
+        android:id="@+id/btn_open_activity_float_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在Activity中打开悬浮窗"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="129dp" />
+
+    <Button
+        android:id="@+id/btn_open_service_float_window"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="在Service中打开悬浮窗"
         tools:layout_editor_absoluteX="195dp"
         tools:layout_editor_absoluteY="129dp" />
 
