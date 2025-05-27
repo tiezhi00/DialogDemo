@@ -49,5 +49,19 @@
         android:text="跳转到自定义通知页面"
         tools:layout_editor_absoluteX="195dp"
         tools:layout_editor_absoluteY="129dp" />
+    <Button
+        android:id="@+id/btn_jump_to_custom_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式跳转到自定义Activity"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="129dp" />
+    <Button
+        android:id="@+id/btn_jump_to_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐式跳转到百度"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="129dp" />
 
 </LinearLayout>

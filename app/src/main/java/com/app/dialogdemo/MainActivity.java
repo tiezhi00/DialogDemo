@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.provider.Settings;
 import android.view.Gravity;
 import android.view.View;
@@ -69,6 +70,37 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //展示自定义通知
                 Intent intent = new Intent(MainActivity.this, CustomNotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_jump_to_custom_activity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //隐式跳转到自定义通知Activity
+                Intent intent = new Intent();
+                intent.setAction("com.app.dialogdemo.CustomActivity");
+                startActivity(intent);
+            }
+        });
+        findViewById(R.id.btn_jump_to_baidu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //隐式跳转到百度
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.baidu.com"));
+                //打开相机
+//                intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                //打开相册
+//                intent.setAction(Intent.ACTION_PICK);
+//                intent.setType("image/*");
+                //打电话
+//                intent.setAction(Intent.ACTION_DIAL);
+//                intent.setData(Uri.parse("tel:10086"));
+                //发送短信
+//                intent.setAction(Intent.ACTION_SENDTO);
+//                intent.setData(Uri.parse("smsto:10086"));
+//                intent.putExtra("sms_body", "Hello, this is a test message.");
                 startActivity(intent);
             }
         });
