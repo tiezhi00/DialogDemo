@@ -18,6 +18,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.app.dialogdemo.dialog.PhotoDialog;
 import com.app.dialogdemo.floatingwindow.ActivityFloatingWindow;
+import com.app.dialogdemo.notification.CustomNotificationActivity;
 import com.app.dialogdemo.service.ForegroundService;
 
 /*
@@ -63,8 +64,16 @@ public class MainActivity extends AppCompatActivity {
                 startService(intent);
             }
         });
+        findViewById(R.id.btn_custom_notification).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //展示自定义通知
+                Intent intent = new Intent(MainActivity.this, CustomNotificationActivity.class);
+                startActivity(intent);
+            }
+        });
         //初始化悬浮窗
-        initFloatingWindow();
+//        initFloatingWindow();
 
     }
 

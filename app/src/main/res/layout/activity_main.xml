@@ -42,4 +42,12 @@
         tools:layout_editor_absoluteX="195dp"
         tools:layout_editor_absoluteY="129dp" />
 
+    <Button
+        android:id="@+id/btn_custom_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到自定义通知页面"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="129dp" />
+
 </LinearLayout>
